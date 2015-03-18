@@ -1,0 +1,282 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.thesis.alma.sprint.BeneficiaryActivity">
+
+
+    <!-- Header aligned to top -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/myblue"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/title_activity_beneficiary"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- Footer aligned to bottom -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/myblue"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@null"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- Content below header and above footer -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header"
+        android:gravity="center">
+
+
+        <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/email_login_form"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_vertical_margin"
+                                android:textStyle="italic"
+                                android:textSize="@dimen/small_font_size"
+                                android:gravity="center"
+                                android:text="@string/location" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"
+                                android:textSize="@dimen/small_font_size"
+                                android:gravity="center"
+                                android:text="@string/services_access" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="140dp"
+                                android:textSize="@dimen/small_font_size"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"
+                                android:gravity="center"
+                                android:text="@string/reported_by" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="30dp"
+                                android:textSize="@dimen/small_font_size"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"
+                                android:gravity="center"
+                                android:text="@string/date" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:textSize="@dimen/small_font_size"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"
+                                android:gravity="center"
+                                android:text="@string/time" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:textSize="@dimen/small_font_size"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"
+                                android:gravity="center"
+                                android:text="@string/name" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:textSize="@dimen/small_font_size"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"
+                                android:gravity="center"
+                                android:text="@string/sex" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:textSize="@dimen/small_font_size"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"
+                                android:gravity="center"
+                                android:text="@string/age" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:textSize="@dimen/small_font_size"
+                                android:layout_height="wrap_content"
+                                android:textStyle="italic"
+                                android:gravity="center"
+                                android:text="@string/misp_services" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:prompt="@string/country_prompt"
+                                android:layout_marginTop="@dimen/activity_vertical_margin"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/country_arrays" />
+
+
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/myRadioGroup"
+                                android:checkedButton="@+id/refugeecamp"
+                                android:layout_marginTop="10dp">
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/refugeecamp"
+                                    android:text="@string/refugee_camp" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/idpcamp"
+                                    android:text="@string/idp_camp" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/mobileclinic"
+                                    android:text="@string/mobile_clinic" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/existingclinic"
+                                    android:text="@string/existing_clinic" />
+
+                            </RadioGroup>
+
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:singleLine="true"
+                                android:textSize="@dimen/small_font_size"
+                                android:layout_marginTop="10dp" />
+
+                            <EditText
+                                android:id="@+id/date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:editable="false"
+                                android:ems="10"
+                                android:hint="DD/MM/YYYY"
+                                android:singleLine="true"
+                                android:textSize="@dimen/small_font_size"
+                                android:layout_marginTop="15dp" />
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:singleLine="true"
+                                android:textSize="@dimen/small_font_size" />
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:singleLine="true"
+                                android:textSize="@dimen/small_font_size" />
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="@dimen/activity_vertical_margin"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/gender_arrays" />
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:singleLine="true"
+                                android:textSize="@dimen/small_font_size"
+                                android:layout_marginTop="15dp" />
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="@dimen/activity_vertical_margin"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/services_arrays" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+

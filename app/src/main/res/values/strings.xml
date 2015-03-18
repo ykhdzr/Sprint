@@ -6,5 +6,169 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="SprintLogo">Sprint Logo</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_emergency">Data</string>
+    <string name="title_activity_mispchecklist">MISP Checklist</string>
+
+    <!-- Strings related to login -->
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_rememberme">Remember Me ?</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_misp_checklist">MISP Checklist</string>
+    <string name="action_beneficiary_data">Beneficiary Data</string>
+    <string name="action_emergency_response">Emergency Response</string>
+    <string name="action_report">Report</string>
+    <string name="action_misp_services">MISP Services</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="footer_text">IPPF Extranet Assistant Application is for Staff and Member Associations only. Copyright@2015IPPF</string>
+
+    <!-- Strings related to Emergency Response -->
+    <string name="name">Name</string>
+    <string name="date">Date</string>
+    <string name="program">Program</string>
+
+    <!-- Strings related to MISP Checklist -->
+    <string name="geographic_area">Geographic Area</string>
+    <string name="reporting_period">Reporting Period</string>
+    <string name="start_date">Start Date</string>
+    <string name="reported_by">Reported by</string>
+    <string name="location">Location</string>
+    <string name="misp_obj_1">MISP Objective 1</string>
+    <string name="misp_obj_2">MISP Objective 2</string>
+    <string name="misp_obj_3">MISP Objective 3</string>
+    <string name="misp_obj_4">MISP Objective 4</string>
+    <string name="misp_obj_5">MISP Objective 5</string>
+    <string name="title_activity_mispobj">MISPObjActivity</string>
+
+    <!-- Strings related to MISP OBJ -->
+    <string name="title_misp_obj_1">MISP OBJ 1</string>
+    <string name="sub_title_misp_obj_1">COORDINATION</string>
+    <string name="title_misp_obj_2">MISP OBJ 2</string>
+    <string name="sub_title_misp_obj_2">SEXUAL VIOLENCE</string>
+    <string name="title_misp_obj_3">MISP OBJ 3</string>
+    <string name="sub_title_misp_obj_3">HIV</string>
+    <string name="title_misp_obj_4">MISP OBJ 4</string>
+    <string name="sub_title_misp_obj_4">MATERNAL/NEONATAL MORTALITY AND MORBIDITY</string>
+    <string name="title_misp_obj_5">MISP OBJ 5</string>
+    <string name="sub_title_misp_obj_5">Planning for Comprehensive RH</string>
+    <string name="checklist_item_obj1_1">Lead RH agency identified within the health sector/cluster</string>
+    <string name="checklist_item_obj1_2">RH officer functioning within the health sector/cluster</string>
+    <string name="checklist_item_obj1_3">National RH stakeholder meetings established &amp; meeting regularly (bi-monthly)</string>
+    <string name="checklist_item_obj1_4">Local/Community RH stakeholder meetings established &amp; meeting regularly (weekly)</string>
+    <string name="checklist_item_obj1_5">Country coordination team (CCT) has the capacity to respond effectively to the immediate SRH needs of the effected population</string>
+    <string name="checklist_item_obj2_1">Multi-sectoral coordinated mechanisms to prevent sexual violence are in place</string>
+    <string name="checklist_item_obj2_2">Confidential health services to manage survivors of rape are available:</string>
+    <string name="checklist_item_obj2_2_1">* Emergency Contraception</string>
+    <string name="checklist_item_obj2_2_2">* PEP</string>
+    <string name="checklist_item_obj2_2_3">* Antibiotics to prevent and treat STIs </string>
+    <string name="checklist_item_obj2_2_4">* Tetanus toxoid/ Tetanus immunoglobin</string>
+    <string name="checklist_item_obj2_2_5">* Hep B vaccine</string>
+    <string name="checklist_item_obj2_2_6">* Referral to health, psychological, social support services</string>
+    <string name="checklist_item_obj2_3">Information on post-rape care and access to services disseminated to community.</string>
+    <string name="checklist_item_obj3_1">Safe and rational blood transfusion protocols in place</string>
+    <string name="checklist_item_obj3_2">Sufficient materials and checklist to ensure standard precautions in place</string>
+    <string name="checklist_item_obj3_3">Condoms available free of charge at health facilities</string>
+    <string name="checklist_item_obj3_4">Condoms available free of charge in the community</string>
+    <string name="checklist_item_obj4_1">Health center (to ensure basic EmOC and newborn care 24/7) available:</string>
+    <string name="checklist_item_obj4_1_1">* 1 qualified health worker on duty per 50 outpatient consultations per day</string>
+    <string name="checklist_item_obj4_1_2">* midwife supplies, including newborn supplies  available</string>
+    <string name="checklist_item_obj4_2">Hospital (to ensure comprehensive EmOC and newborn care 24/7) available:</string>
+    <string name="checklist_item_obj4_2_1">* 1 qualified service provider on duty per 20-30 inpatient beds for the obstetric wards</string>
+    <string name="checklist_item_obj4_2_2">* 1 team of doctor/nurse/midwife/anaesthetist on duty</string>
+    <string name="checklist_item_obj4_2_3">* adequate drugs and supplies to support comprehensive EmOC and newborn care 24/7</string>
+    <string name="checklist_item_obj4_3">Referral system for obstetic and newborn emergencies functioning 24 hours per day/7 days per week (24/7):</string>
+    <string name="checklist_item_obj4_3_1">* means of communication (radios, mobile phone) available</string>
+    <string name="checklist_item_obj4_3_2">* transport from community to health center available 24/7</string>
+    <string name="checklist_item_obj4_3_3">* transport from health center to hospital available 24/7</string>
+    <string name="checklist_item_obj4_4">Functioning cold chain (for oxytocin, blood screening tests) in place.</string>
+    <string name="checklist_item_obj5_1">Sites for future delivery of comprehensive RH services identified</string>
+    <string name="checklist_item_obj5_2">Staff training needs, training tools, facilitators identified</string>
+    <string name="checklist_item_obj5_3">RH Commodities consumption (medicines and renewable supplies) monitored</string>
+    <string name="checklist_item_obj5_4">RH supplies procurement channels identified</string>
+    <string name="checklist_item_obj5_5">Basic contraceptive methods available to meet demand</string>
+    <string name="checklist_item_obj5_6">ARV available for patients on ART, including PMTCT</string>
+    <string name="checklist_item_obj5_7">STI treatment available at health facilities</string>
+    <string name="checklist_item_obj5_8">Hygine kits have been distributed</string>
+
+    <!-- Strings related to Beneficiary Data -->
+
+
+    <!-- Strings related to Location -->
+    <string name="country_prompt">Select Country</string>
+
+    <string-array name="country_arrays">
+        <item>Kenya</item>
+        <item>Uganda</item>
+        <item>Utopia</item>
+        <item>DRC</item>
+        <item>CAR</item>
+        <item>Ivory Coast</item>
+        <item>Afghanistan</item>
+        <item>Bangladesh</item>
+        <item>Sri Lanka</item>
+        <item>Pakistan</item>
+        <item>Indonesia</item>
+        <item>Philippine</item>
+        <item>Myanmar</item>
+        <item>PNG</item>
+        <item>Timor Leste</item>
+        <item>Solomon Island</item>
+    </string-array>
+
+    <!-- Strings related to MISP Services -->
+    <string-array name="services_arrays">
+        <item>Male Condom</item>
+        <item>Female Condom</item>
+        <item>Clean Delivery part. A</item>
+        <item>Clean Delivery part. A</item>
+        <item>Post Rape part. A</item>
+        <item>Post Rape part. A</item>
+        <item>Oral &amp; Injectable contraception</item>
+        <item>STI</item>
+        <item>Delivery (Health Facility)</item>
+        <item>IUD</item>
+        <item>Cervical &amp; Vaginal</item>
+        <item>Blood Transfusion</item>
+        <item>Reproductive Health part. A</item>
+        <item>Reproductive Health part. B</item>
+        <item>Abortion</item>
+    </string-array>
+
+    <string name="status_prompt">No Change</string>
+    <string-array name="status_arrays">
+        <item>No Progress</item>
+        <item>Minimum</item>
+        <item>Well</item>
+        <item>Complete</item>
+    </string-array>
+
+    <string name="title_activity_beneficiary">Beneficiary Data</string>
+
+
+    <!-- Strings related to Beneficiary Data -->
+    <string name="services_access">Service Access</string>
+    <string name="time">Time</string>
+    <string name="sex">Sex</string>
+    <string name="age">Age</string>
+    <string name="misp_services">MISP Services</string>
+
+
+    <string name="refugee_camp">Refugee Camp</string>
+    <string name="idp_camp">IDP Camp</string>
+    <string name="mobile_clinic">Mobile Clinic</string>
+    <string name="existing_clinic">Existing Clinic</string>
+
+    <string-array name="gender_arrays">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
 
 </resources>

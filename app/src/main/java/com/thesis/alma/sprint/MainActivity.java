@@ -1,6 +1,5 @@
 package com.thesis.alma.sprint;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -8,7 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +22,16 @@ public class MainActivity extends Activity {
 
             @Override
             public void onFinish() {
-                startActivity(new Intent(MainActivity.this, LoginActivity.class));
-
+                startActivityForResult(new Intent(MainActivity.this, HomeActivity.class), 0);
             }
         }.start();
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        this.finish();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

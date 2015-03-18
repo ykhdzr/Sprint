@@ -1,0 +1,243 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.thesis.alma.sprint.MISPObjActivity">
+
+
+    <!-- Header aligned to top -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/myblue"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/title_misp_obj_2"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/sub_title_misp_obj_2"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Footer aligned to bottom -->
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/myblue"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@null"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- Content below header and above footer -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer"
+        android:layout_below="@id/header"
+        android:gravity="center">
+
+
+        <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/email_login_form"
+                    android:layout_width="match_parent"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_vertical_margin"
+                                android:textStyle="italic"
+                                android:textSize="@dimen/extra_small_font_size"
+                                android:text="@string/checklist_item_obj2_1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_vertical_margin"
+                                android:textStyle="italic"
+                                android:textSize="@dimen/extra_small_font_size"
+                                android:text="@string/checklist_item_obj2_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_vertical_margin"
+                                android:textStyle="italic"
+                                android:textSize="@dimen/extra_small_font_size"
+                                android:text="@string/checklist_item_obj2_2_1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_vertical_margin"
+                                android:textStyle="italic"
+                                android:textSize="@dimen/extra_small_font_size"
+                                android:text="@string/checklist_item_obj2_2_2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_vertical_margin"
+                                android:textStyle="italic"
+                                android:textSize="@dimen/extra_small_font_size"
+                                android:text="@string/checklist_item_obj2_2_3" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_vertical_margin"
+                                android:textStyle="italic"
+                                android:textSize="@dimen/extra_small_font_size"
+                                android:text="@string/checklist_item_obj2_2_4" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_vertical_margin"
+                                android:textStyle="italic"
+                                android:textSize="@dimen/extra_small_font_size"
+                                android:text="@string/checklist_item_obj2_2_5" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_vertical_margin"
+                                android:textStyle="italic"
+                                android:textSize="@dimen/extra_small_font_size"
+                                android:text="@string/checklist_item_obj2_2_6" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/activity_vertical_margin"
+                                android:textStyle="italic"
+                                android:textSize="@dimen/extra_small_font_size"
+                                android:text="@string/checklist_item_obj2_3" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/activity_horizontal_margin"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:prompt="@string/status_prompt"
+                                android:layout_marginTop="@dimen/activity_vertical_margin"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/status_arrays" />
+
+                            <Spinner
+                                android:prompt="@string/status_prompt"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="85dp"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/status_arrays" />
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:prompt="@string/status_prompt"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/status_arrays" />
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_height="wrap_content"
+                                android:prompt="@string/status_prompt"
+                                android:entries="@array/status_arrays" />
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="20dp"
+                                android:prompt="@string/status_prompt"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/status_arrays" />
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="20dp"
+                                android:prompt="@string/status_prompt"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/status_arrays" />
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:prompt="@string/status_prompt"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/status_arrays" />
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="25dp"
+                                android:prompt="@string/status_prompt"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/status_arrays" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
