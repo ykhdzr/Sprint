@@ -10,6 +10,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 
 import java.text.DecimalFormat;
+import java.util.Calendar;
 
 
 public class EmergencyActivity extends BaseActivity implements View.OnClickListener {
@@ -42,9 +43,11 @@ public class EmergencyActivity extends BaseActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.dateofbirth:
 
-                final int M_YEAR = 1980;
-                final int M_MONTH = 0;
-                final int M_DAY = 1;
+                Calendar c = Calendar.getInstance();
+                c.setTimeInMillis(System.currentTimeMillis());
+                int mYear = c.get(Calendar.YEAR);
+                int mMonth = c.get(Calendar.MONTH);
+                int mDay = c.get(Calendar.DAY_OF_MONTH);
 
                 final DecimalFormat mFormat = new DecimalFormat("00");
                 DatePickerDialog mDatePicker = new DatePickerDialog(EmergencyActivity.this,
@@ -53,13 +56,13 @@ public class EmergencyActivity extends BaseActivity implements View.OnClickListe
                                                   int selectedyear, int selectedmonth,
                                                   int selectedday) {
                                 etDate.setText(mFormat.format(selectedday)
-                                                + "-"
+                                                + "/"
                                                 + mFormat.format(selectedmonth + 1)
-                                                + "-" +
+                                                + "/" +
                                                 mFormat.format(selectedyear)
                                 );
                             }
-                        }, M_YEAR, M_MONTH, M_DAY);
+                        }, mYear, mMonth, mDay);
                 mDatePicker.setTitle("Select date");
                 mDatePicker.show();
                 break;

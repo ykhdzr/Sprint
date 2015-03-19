@@ -2,4 +2,7 @@
 <resources>
     <color name="myblue">#3366cc</color>
     <color name="myred">#ff0000</color>
+    <color name="mybrokenwhite">#b3ffffff</color>
+    <color name="mydark">#303030</color>
+
 </resources>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="author_name">By Iga Alma</string>
+
     <string name="app_name">Sprint</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="hello_world">Hello world!</string>
@@ -11,7 +13,6 @@
     <string name="title_activity_mispchecklist">MISP Checklist</string>
 
     <!-- Strings related to login -->
-    <string name="title_activity_login">Sign in</string>
     <string name="prompt_username">Username</string>
     <string name="prompt_password">Password</string>
     <string name="prompt_rememberme">Remember Me ?</string>
@@ -22,7 +23,6 @@
     <string name="action_emergency_response">Emergency Response</string>
     <string name="action_report">Report</string>
     <string name="action_misp_services">MISP Services</string>
-    <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
@@ -142,6 +142,7 @@
     </string-array>
 
     <string name="status_prompt">No Change</string>
+
     <string-array name="status_arrays">
         <item>No Progress</item>
         <item>Minimum</item>
@@ -151,15 +152,12 @@
 
     <string name="title_activity_beneficiary">Beneficiary Data</string>
 
-
     <!-- Strings related to Beneficiary Data -->
     <string name="services_access">Service Access</string>
     <string name="time">Time</string>
     <string name="sex">Sex</string>
     <string name="age">Age</string>
     <string name="misp_services">MISP Services</string>
-
-
     <string name="refugee_camp">Refugee Camp</string>
     <string name="idp_camp">IDP Camp</string>
     <string name="mobile_clinic">Mobile Clinic</string>
@@ -170,5 +168,6 @@
         <item>Female</item>
     </string-array>
 
+    <string name="title_activity_maps">Map</string>
 
 </resources>

@@ -31,7 +31,7 @@
             android:layout_margin="5dp"
             android:text="@string/sub_title_misp_obj_1"
             android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textSize="@dimen/small_font_size" />
     </LinearLayout>
 
     <!-- Footer aligned to bottom -->
@@ -85,98 +85,115 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:orientation="vertical">
+                            android:textStyle="italic"
+                            android:textSize="@dimen/extra_small_font_size"
+                            android:text="@string/checklist_item_obj1_1" />
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/activity_vertical_margin"
-                                android:textStyle="italic"
-                                android:textSize="@dimen/extra_small_font_size"
-                                android:text="@string/checklist_item_obj1_1" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/activity_vertical_margin"
-                                android:textStyle="italic"
-                                android:textSize="@dimen/extra_small_font_size"
-                                android:text="@string/checklist_item_obj1_2" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/activity_vertical_margin"
-                                android:textStyle="italic"
-                                android:textSize="@dimen/extra_small_font_size"
-                                android:text="@string/checklist_item_obj1_3" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/activity_vertical_margin"
-                                android:textStyle="italic"
-                                android:textSize="@dimen/extra_small_font_size"
-                                android:text="@string/checklist_item_obj1_4" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/activity_vertical_margin"
-                                android:textStyle="italic"
-                                android:textSize="@dimen/extra_small_font_size"
-                                android:text="@string/checklist_item_obj1_5" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
+                        <Spinner
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="@dimen/activity_horizontal_margin"
+                            android:prompt="@string/status_prompt"
+                            android:layout_marginLeft="@dimen/activity_horizontal_more_margin"
                             android:layout_weight="1"
-                            android:orientation="vertical">
-
-                            <Spinner
-                                android:layout_width="match_parent"
-                                android:prompt="@string/status_prompt"
-                                android:layout_marginTop="@dimen/activity_vertical_margin"
-                                android:layout_height="wrap_content"
-                                android:entries="@array/status_arrays" />
-
-                            <Spinner
-                                android:prompt="@string/status_prompt"
-                                android:layout_width="match_parent"
-                                android:layout_marginTop="40dp"
-                                android:layout_height="wrap_content"
-                                android:entries="@array/status_arrays" />
-
-                            <Spinner
-                                android:layout_width="match_parent"
-                                android:prompt="@string/status_prompt"
-                                android:layout_marginTop="25dp"
-                                android:layout_height="wrap_content"
-                                android:entries="@array/status_arrays" />
-
-                            <Spinner
-                                android:layout_width="match_parent"
-                                android:layout_marginTop="35dp"
-                                android:layout_height="wrap_content"
-                                android:prompt="@string/status_prompt"
-                                android:entries="@array/status_arrays" />
-
-                            <Spinner
-                                android:layout_width="match_parent"
-                                android:layout_marginTop="50dp"
-                                android:prompt="@string/status_prompt"
-                                android:layout_height="wrap_content"
-                                android:entries="@array/status_arrays" />
-                        </LinearLayout>
-
+                            android:layout_height="wrap_content"
+                            android:entries="@array/status_arrays" />
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/activity_horizontal_more_margin"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textStyle="italic"
+                            android:textSize="@dimen/extra_small_font_size"
+                            android:text="@string/checklist_item_obj1_2" />
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:prompt="@string/status_prompt"
+                            android:layout_marginLeft="@dimen/activity_horizontal_more_margin"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/status_arrays" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/activity_horizontal_more_margin"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textStyle="italic"
+                            android:textSize="@dimen/extra_small_font_size"
+                            android:text="@string/checklist_item_obj1_3" />
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:prompt="@string/status_prompt"
+                            android:layout_marginLeft="@dimen/activity_horizontal_more_margin"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/status_arrays" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/activity_horizontal_more_margin"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textStyle="italic"
+                            android:textSize="@dimen/extra_small_font_size"
+                            android:text="@string/checklist_item_obj1_4" />
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="@dimen/activity_horizontal_more_margin"
+                            android:prompt="@string/status_prompt"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/status_arrays" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/activity_horizontal_more_margin"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textStyle="italic"
+                            android:textSize="@dimen/extra_small_font_size"
+                            android:text="@string/checklist_item_obj1_5" />
+
+                        <Spinner
+                            android:layout_marginLeft="@dimen/activity_horizontal_more_margin"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:prompt="@string/status_prompt"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/status_arrays" />
+                    </LinearLayout>
+
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>

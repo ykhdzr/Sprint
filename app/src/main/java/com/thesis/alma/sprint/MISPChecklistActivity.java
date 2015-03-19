@@ -10,7 +10,13 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
 import java.text.DecimalFormat;
+import java.util.Calendar;
 
 
 public class MISPChecklistActivity extends BaseActivity implements View.OnClickListener {
@@ -18,12 +24,28 @@ public class MISPChecklistActivity extends BaseActivity implements View.OnClickL
     private EditText etStartDate;
     private Button mispobj1, mispobj2, mispobj3, mispobj4, mispobj5;
 
+    private GoogleMap googleMap;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mispchecklist);
+
+        googleMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
+
+        final LatLng TutorialsPoint = new LatLng(21, 57);
+        googleMap.addMarker(new MarkerOptions().position(TutorialsPoint).title("My Location"));
+        googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+        googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+        googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+        googleMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
+        googleMap.getUiSettings().setZoomGesturesEnabled(true);
+
+
         etStartDate = (EditText) findViewById(R.id.startdate);
         etStartDate.setOnClickListener(this);
+
         mispobj1 = (Button) findViewById(R.id.mispobj1);
         mispobj2 = (Button) findViewById(R.id.mispobj2);
         mispobj3 = (Button) findViewById(R.id.mispobj3);
@@ -65,9 +87,11 @@ public class MISPChecklistActivity extends BaseActivity implements View.OnClickL
         switch (v.getId()) {
             case R.id.startdate:
 
-                final int M_YEAR = 1980;
-                final int M_MONTH = 0;
-                final int M_DAY = 1;
+                Calendar c = Calendar.getInstance();
+                c.setTimeInMillis(System.currentTimeMillis());
+                int mYear = c.get(Calendar.YEAR);
+                int mMonth = c.get(Calendar.MONTH);
+                int mDay = c.get(Calendar.DAY_OF_MONTH);
 
                 final DecimalFormat mFormat = new DecimalFormat("00");
                 DatePickerDialog mDatePicker = new DatePickerDialog(MISPChecklistActivity.this,
@@ -76,39 +100,39 @@ public class MISPChecklistActivity extends BaseActivity implements View.OnClickL
                                                   int selectedyear, int selectedmonth,
                                                   int selectedday) {
                                 etStartDate.setText(mFormat.format(selectedday)
-                                                + "-"
+                                                + "/"
                                                 + mFormat.format(selectedmonth + 1)
-                                                + "-" +
+                                                + "/" +
                                                 mFormat.format(selectedyear)
                                 );
                             }
-                        }, M_YEAR, M_MONTH, M_DAY);
+                        }, mYear, mMonth, mDay);
                 mDatePicker.setTitle("Select date");
                 mDatePicker.show();
                 break;
             case R.id.mispobj1:
                 Intent myIntent1 = new Intent(this, MISPObjActivity.class);
-                myIntent1.putExtra(Constant.ENUM_KEY, MISPObjActivity.Obj.MISPOBJ1);
+                myIntent1.putExtra(Constant.ENUM_KEY, MISPObjActivity.Obj.MISPOBJ1.ordinal());
                 startActivity(myIntent1);
                 break;
             case R.id.mispobj2:
                 Intent myIntent2 = new Intent(this, MISPObjActivity.class);
-                myIntent2.putExtra(Constant.ENUM_KEY, MISPObjActivity.Obj.MISPOBJ2);
+                myIntent2.putExtra(Constant.ENUM_KEY, MISPObjActivity.Obj.MISPOBJ2.ordinal());
                 startActivity(myIntent2);
                 break;
             case R.id.mispobj3:
                 Intent myIntent3 = new Intent(this, MISPObjActivity.class);
-                myIntent3.putExtra(Constant.ENUM_KEY, MISPObjActivity.Obj.MISPOBJ3);
+                myIntent3.putExtra(Constant.ENUM_KEY, MISPObjActivity.Obj.MISPOBJ3.ordinal());
                 startActivity(myIntent3);
                 break;
             case R.id.mispobj4:
                 Intent myIntent4 = new Intent(this, MISPObjActivity.class);
-                myIntent4.putExtra(Constant.ENUM_KEY, MISPObjActivity.Obj.MISPOBJ4);
+                myIntent4.putExtra(Constant.ENUM_KEY, MISPObjActivity.Obj.MISPOBJ4.ordinal());
                 startActivity(myIntent4);
                 break;
             case R.id.mispobj5:
                 Intent myIntent5 = new Intent(this, MISPObjActivity.class);
-                myIntent5.putExtra(Constant.ENUM_KEY, MISPObjActivity.Obj.MISPOBJ5);
+                myIntent5.putExtra(Constant.ENUM_KEY, MISPObjActivity.Obj.MISPOBJ5.ordinal());
                 startActivity(myIntent5);
                 break;
         }

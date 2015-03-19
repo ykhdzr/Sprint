@@ -1,6 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -8,11 +10,25 @@
 
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_width="350dp"
         android:layout_height="100dp"
         android:src="@drawable/sprintlogo"
         android:contentDescription="@string/SprintLogo"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="@string/author_name"
+        android:textColor="@color/mydark"
+        android:textSize="@dimen/extra_small_font_size"
+        android:layout_below="@+id/logo"
+        android:layout_alignRight="@+id/logo"
+        android:layout_alignEnd="@+id/logo"
+        android:layout_marginRight="61dp"
+        android:layout_marginEnd="61dp" />
 
 </RelativeLayout>

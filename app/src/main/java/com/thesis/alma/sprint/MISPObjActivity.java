@@ -1,6 +1,7 @@
 package com.thesis.alma.sprint;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 
 
@@ -10,12 +11,23 @@ public class MISPObjActivity extends BaseActivity {
         MISPOBJ1, MISPOBJ2, MISPOBJ3, MISPOBJ4, MISPOBJ5
     }
 
-    private Obj obj;
+    private int val;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        obj = (Obj) savedInstanceState.getSerializable(Constant.ENUM_KEY);
+        Bundle bundle = getIntent().getExtras();
+
+        if (bundle == null)
+            return;
+
+
+        if (bundle.containsKey(Constant.ENUM_KEY)) {
+            val = bundle.getInt(Constant.ENUM_KEY);
+            Log.i("MISPObjActivity", Constant.ENUM_KEY + ":" + String.valueOf(Constant.ENUM_KEY));
+        }
+
+        Obj obj = Obj.values()[val];
 
         switch (obj) {
             case MISPOBJ1:

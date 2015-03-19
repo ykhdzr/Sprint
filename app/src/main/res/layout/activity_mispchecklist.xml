@@ -167,12 +167,31 @@
                                 android:textSize="@dimen/small_font_size" />
 
 
-                            <com.google.android.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
-                                android:id="@+id/mapview"
-                                android:layout_width="fill_parent"
-                                android:layout_height="fill_parent"
-                                android:clickable="true"
-                                android:apiKey="API_KEY" />
+                            <!--<com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"-->
+                            <!--xmlns:map="http://schemas.android.com/apk/res-auto"-->
+                            <!--android:id="@+id/mapview"-->
+                            <!--android:layout_width="100dp"-->
+                            <!--android:layout_height="100dp"-->
+                            <!--android:apiKey="@string/google_maps_key"-->
+                            <!--android:clickable="true"-->
+                            <!--map:uiCompass="true"-->
+                            <!--map:zOrderOnTop="true"-->
+                            <!--map:uiZoomControls="true"-->
+                            <!--android:background="#00000000" />-->
+
+                            <fragment
+                                android:id="@+id/map"
+                                android:name="com.google.android.gms.maps.MapFragment"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp" />
+
+
+                            <!--<com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"-->
+                            <!--android:id="@+id/mapview"-->
+                            <!--android:layout_width="100dp"-->
+                            <!--android:layout_height="100dp"-->
+                            <!--android:clickable="true"-->
+                            <!--android:apiKey="@string/google_maps_key" />-->
 
                         </LinearLayout>
 
