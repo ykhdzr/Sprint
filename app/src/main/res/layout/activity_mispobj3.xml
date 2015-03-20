@@ -86,6 +86,7 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:padding="@dimen/activity_text_padding"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -109,6 +110,7 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:padding="@dimen/activity_text_padding"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -135,6 +137,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:padding="@dimen/activity_text_padding"
                             android:textStyle="italic"
                             android:textSize="@dimen/extra_small_font_size"
                             android:text="@string/checklist_item_obj3_3" />
@@ -155,6 +158,7 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:padding="@dimen/activity_text_padding"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"

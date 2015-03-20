@@ -12,17 +12,19 @@
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:layout_alignParentTop="true"
-        android:background="@color/myblue"
-        android:gravity="center">
+        android:background="@color/myblue">
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
             android:text="Home"
+            android:layout_margin="5dp"
             android:textColor="#FFFFFF"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:id="@+id/textView" />
     </RelativeLayout>
 
     <!-- Footer aligned to bottom -->
@@ -129,7 +131,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
                     android:padding="@dimen/activity_horizontal_margin"
-                    android:src="@drawable/sprintlogo" />
+                    android:background="@drawable/sprintlogo"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp" />
             </LinearLayout>
         </ScrollView>
 

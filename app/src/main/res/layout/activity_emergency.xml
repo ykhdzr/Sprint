@@ -72,15 +72,15 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="120dp"
                     android:padding="@dimen/activity_horizontal_margin"
                     android:background="@drawable/sprintlogo"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginRight="50dp" />
+                    android:layout_marginRight="50dp"
+                    android:layout_marginLeft="50dp" />
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="2dp"
+                    android:layout_height="5dp"
                     android:background="@color/myblue" />
 
                 <LinearLayout
@@ -88,80 +88,84 @@
                     android:layout_width="match_parent"
                     android:padding="@dimen/activity_horizontal_margin"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/activity_vertical_margin"
                     android:orientation="vertical">
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:padding="@dimen/activity_text_padding"
+                            android:textStyle="italic"
                             android:layout_weight="1"
-                            android:orientation="vertical">
+                            android:textSize="@dimen/medium_font_size"
+                            android:text="@string/name" />
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/activity_vertical_margin"
-                                android:textStyle="italic"
-                                android:textSize="@dimen/medium_font_size"
-                                android:gravity="center"
-                                android:text="@string/name" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:singleLine="true"
+                            android:textSize="@dimen/medium_font_size" />
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_marginTop="@dimen/activity_vertical_margin"
-                                android:layout_height="wrap_content"
-                                android:textStyle="italic"
-                                android:textSize="@dimen/medium_font_size"
-                                android:gravity="center"
-                                android:text="@string/date" />
+                    </LinearLayout>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_marginTop="@dimen/activity_vertical_margin"
-                                android:textSize="@dimen/medium_font_size"
-                                android:layout_height="wrap_content"
-                                android:textStyle="italic"
-                                android:gravity="center"
-                                android:text="@string/program" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/activity_vertical_less_margin"
+                        android:orientation="horizontal">
 
-                        </LinearLayout>
-
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:padding="@dimen/activity_text_padding"
+                            android:textStyle="italic"
+                            android:textSize="@dimen/medium_font_size"
                             android:layout_weight="1"
-                            android:orientation="vertical">
+                            android:text="@string/date" />
 
-                            <EditText
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:ems="10"
-                                android:singleLine="true"
-                                android:textSize="@dimen/medium_font_size" />
+                        <EditText
+                            android:id="@+id/dateofbirth"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:editable="false"
+                            android:ems="10"
+                            android:hint="DD/MM/YYYY"
+                            android:singleLine="true"
+                            android:focusable="false"
+                            android:textSize="@dimen/medium_font_size" />
 
-                            <EditText
-                                android:id="@+id/dateofbirth"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:editable="false"
-                                android:ems="10"
-                                android:hint="DD/MM/YYYY"
-                                android:singleLine="true"
-                                android:textSize="@dimen/medium_font_size" />
+                    </LinearLayout>
 
-                            <EditText
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:ems="10"
-                                android:singleLine="true"
-                                android:textSize="@dimen/medium_font_size" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/activity_vertical_less_margin"
+                        android:orientation="horizontal">
 
-                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/activity_text_padding"
+                            android:textSize="@dimen/medium_font_size"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:layout_weight="1"
+                            android:text="@string/program" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:singleLine="true"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/medium_font_size" />
 
                     </LinearLayout>
 

@@ -88,6 +88,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:padding="@dimen/activity_text_padding"
                             android:layout_weight="1"
                             android:textStyle="italic"
                             android:textSize="@dimen/extra_small_font_size"
@@ -111,6 +112,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:padding="@dimen/activity_text_padding"
                             android:layout_weight="1"
                             android:textStyle="italic"
                             android:textSize="@dimen/extra_small_font_size"
@@ -133,6 +135,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:padding="@dimen/activity_text_padding"
                             android:textStyle="italic"
                             android:textSize="@dimen/extra_small_font_size"
                             android:text="@string/checklist_item_obj2_2_1" />
@@ -155,6 +158,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:padding="@dimen/activity_text_padding"
                             android:layout_weight="1"
                             android:textStyle="italic"
                             android:textSize="@dimen/extra_small_font_size"
@@ -177,29 +181,7 @@
 
                         <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:textStyle="italic"
-                            android:textSize="@dimen/extra_small_font_size"
-                            android:text="@string/checklist_item_obj2_2_2" />
-
-                        <Spinner
-                            android:layout_width="match_parent"
-                            android:prompt="@string/status_prompt"
-                            android:layout_marginLeft="@dimen/activity_horizontal_more_margin"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:entries="@array/status_arrays" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_marginTop="@dimen/activity_vertical_less_margin"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="match_parent"
+                            android:padding="@dimen/activity_text_padding"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:textStyle="italic"
@@ -223,6 +205,7 @@
 
                         <TextView
                             android:layout_width="match_parent"
+                            android:padding="@dimen/activity_text_padding"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:textStyle="italic"
@@ -247,6 +230,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:padding="@dimen/activity_text_padding"
                             android:layout_weight="1"
                             android:textStyle="italic"
                             android:textSize="@dimen/extra_small_font_size"
@@ -269,6 +253,7 @@
 
                         <TextView
                             android:layout_width="match_parent"
+                            android:padding="@dimen/activity_text_padding"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:textStyle="italic"
@@ -291,6 +276,7 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:padding="@dimen/activity_text_padding"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"

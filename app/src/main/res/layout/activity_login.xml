@@ -12,9 +12,9 @@
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:layout_alignParentTop="true"
-        android:background="@color/myblue"
-        android:gravity="center">
+        android:background="@color/myblue">
 
         <TextView
             android:layout_width="wrap_content"
@@ -81,7 +81,7 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
+                    android:layout_height="120dp"
                     android:padding="@dimen/activity_horizontal_margin"
                     android:background="@drawable/sprintlogo"
                     android:layout_marginRight="50dp"
@@ -103,6 +103,8 @@
                     <AutoCompleteTextView
                         android:id="@+id/email"
                         android:layout_width="match_parent"
+                        android:textStyle="italic"
+                        android:textSize="@dimen/small_font_size"
                         android:layout_height="wrap_content"
                         android:hint="@string/prompt_username"
                         android:inputType="textEmailAddress"
@@ -111,6 +113,9 @@
 
                     <EditText
                         android:id="@+id/password"
+                        android:textStyle="italic"
+                        android:layout_marginTop="@dimen/activity_vertical_less_margin"
+                        android:textSize="@dimen/small_font_size"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="@string/prompt_password"
@@ -124,6 +129,7 @@
                     <CheckBox
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textSize="@dimen/extra_small_font_size"
                         android:text="@string/prompt_rememberme" />
 
                     <Button

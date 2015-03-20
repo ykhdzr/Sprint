@@ -88,6 +88,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:padding="@dimen/activity_text_padding"
                             android:layout_weight="1"
                             android:textStyle="italic"
                             android:textSize="@dimen/extra_small_font_size"
@@ -112,6 +113,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:padding="@dimen/activity_text_padding"
                             android:textStyle="italic"
                             android:textSize="@dimen/extra_small_font_size"
                             android:text="@string/checklist_item_obj1_2" />
@@ -134,6 +136,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:padding="@dimen/activity_text_padding"
                             android:layout_weight="1"
                             android:textStyle="italic"
                             android:textSize="@dimen/extra_small_font_size"
@@ -158,6 +161,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:padding="@dimen/activity_text_padding"
                             android:textStyle="italic"
                             android:textSize="@dimen/extra_small_font_size"
                             android:text="@string/checklist_item_obj1_4" />
@@ -180,6 +184,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:padding="@dimen/activity_text_padding"
                             android:layout_weight="1"
                             android:textStyle="italic"
                             android:textSize="@dimen/extra_small_font_size"

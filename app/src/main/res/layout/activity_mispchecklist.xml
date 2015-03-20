@@ -71,140 +71,139 @@
                     android:layout_marginTop="@dimen/activity_vertical_margin"
                     android:orientation="vertical">
 
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
-                        <LinearLayout
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:orientation="vertical">
+                            android:padding="@dimen/activity_text_padding"
+                            android:textStyle="italic"
+                            android:textSize="@dimen/small_font_size"
+                            android:text="@string/geographic_area" />
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="@dimen/activity_vertical_margin"
-                                android:textStyle="italic"
-                                android:textSize="@dimen/small_font_size"
-                                android:gravity="center"
-                                android:text="@string/geographic_area" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:singleLine="true"
+                            android:textSize="@dimen/small_font_size" />
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_marginTop="@dimen/activity_vertical_margin"
-                                android:layout_height="wrap_content"
-                                android:textStyle="italic"
-                                android:textSize="@dimen/small_font_size"
-                                android:gravity="center"
-                                android:text="@string/reporting_period" />
+                    </LinearLayout>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_marginTop="@dimen/activity_vertical_margin"
-                                android:textSize="@dimen/small_font_size"
-                                android:layout_height="wrap_content"
-                                android:textStyle="italic"
-                                android:gravity="center"
-                                android:text="@string/start_date" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_marginTop="@dimen/activity_vertical_margin"
-                                android:textSize="@dimen/small_font_size"
-                                android:layout_height="wrap_content"
-                                android:textStyle="italic"
-                                android:gravity="center"
-                                android:text="@string/reported_by" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/activity_text_padding"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:textSize="@dimen/small_font_size"
+                            android:layout_weight="1"
+                            android:text="@string/reporting_period" />
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_marginTop="@dimen/activity_vertical_margin"
-                                android:textSize="@dimen/small_font_size"
-                                android:layout_height="wrap_content"
-                                android:textStyle="italic"
-                                android:gravity="center"
-                                android:text="@string/location" />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:textSize="@dimen/small_font_size" />
 
-                        </LinearLayout>
+                    </LinearLayout>
 
-                        <LinearLayout
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textSize="@dimen/small_font_size"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/activity_text_padding"
+                            android:textStyle="italic"
+                            android:layout_weight="1"
+                            android:text="@string/start_date" />
+
+                        <EditText
+                            android:id="@+id/startdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:ems="10"
+                            android:layout_weight="1"
+                            android:hint="DD/MM/YYYY"
+                            android:singleLine="true"
+                            android:textSize="@dimen/small_font_size" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:padding="@dimen/activity_text_padding"
+                            android:textSize="@dimen/small_font_size"
+                            android:layout_height="wrap_content"
+                            android:textStyle="italic"
+                            android:layout_weight="1"
+                            android:text="@string/reported_by" />
+
+                        <EditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:orientation="vertical">
+                            android:ems="10"
+                            android:singleLine="true"
+                            android:textSize="@dimen/small_font_size" />
 
-                            <EditText
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:ems="10"
-                                android:singleLine="true"
-                                android:textSize="@dimen/small_font_size" />
+                    </LinearLayout>
 
-                            <EditText
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:ems="10"
-                                android:singleLine="true"
-                                android:textSize="@dimen/small_font_size" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
-                            <EditText
-                                android:id="@+id/startdate"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:editable="false"
-                                android:ems="10"
-                                android:hint="DD/MM/YYYY"
-                                android:singleLine="true"
-                                android:textSize="@dimen/small_font_size" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:textSize="@dimen/small_font_size"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/activity_text_padding"
+                            android:textStyle="italic"
+                            android:layout_weight="1"
+                            android:text="@string/location" />
 
-                            <EditText
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:ems="10"
-                                android:singleLine="true"
-                                android:textSize="@dimen/small_font_size" />
-
-
-                            <!--<com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"-->
-                            <!--xmlns:map="http://schemas.android.com/apk/res-auto"-->
-                            <!--android:id="@+id/mapview"-->
-                            <!--android:layout_width="100dp"-->
-                            <!--android:layout_height="100dp"-->
-                            <!--android:apiKey="@string/google_maps_key"-->
-                            <!--android:clickable="true"-->
-                            <!--map:uiCompass="true"-->
-                            <!--map:zOrderOnTop="true"-->
-                            <!--map:uiZoomControls="true"-->
-                            <!--android:background="#00000000" />-->
-
-                            <fragment
-                                android:id="@+id/map"
-                                android:name="com.google.android.gms.maps.MapFragment"
-                                android:layout_width="match_parent"
-                                android:layout_height="250dp" />
-
-
-                            <!--<com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"-->
-                            <!--android:id="@+id/mapview"-->
-                            <!--android:layout_width="100dp"-->
-                            <!--android:layout_height="100dp"-->
-                            <!--android:clickable="true"-->
-                            <!--android:apiKey="@string/google_maps_key" />-->
-
-                        </LinearLayout>
+                        <fragment
+                            android:id="@+id/map"
+                            android:layout_weight="1"
+                            android:name="com.google.android.gms.maps.MapFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp" />
 
                     </LinearLayout>
 
                     <Button
                         android:id="@+id/mispobj1"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
                         style="?android:borderlessButtonStyle"
                         android:background="@drawable/button_selector"
                         android:layout_width="match_parent"
                         android:textColor="@color/myblue"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
+                        android:layout_weight="1"
                         android:text="@string/misp_obj_1"
                         android:textStyle="bold" />
 
@@ -213,8 +212,9 @@
                         style="?android:borderlessButtonStyle"
                         android:background="@drawable/button_selector"
                         android:layout_width="match_parent"
-                        android:textColor="@color/myblue"
                         android:layout_marginTop="1dp"
+                        android:textColor="@color/myblue"
+                        android:layout_weight="1"
                         android:layout_height="wrap_content"
                         android:text="@string/misp_obj_2"
                         android:textStyle="bold" />

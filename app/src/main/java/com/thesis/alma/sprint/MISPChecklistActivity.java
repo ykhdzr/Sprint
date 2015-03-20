@@ -10,8 +10,10 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -19,12 +21,12 @@ import java.text.DecimalFormat;
 import java.util.Calendar;
 
 
-public class MISPChecklistActivity extends BaseActivity implements View.OnClickListener {
+public class MISPChecklistActivity extends BaseActivity implements View.OnClickListener, OnMapReadyCallback {
 
     private EditText etStartDate;
     private Button mispobj1, mispobj2, mispobj3, mispobj4, mispobj5;
 
-    private GoogleMap googleMap;
+    private MapFragment mapFragment;
 
 
     @Override
@@ -32,16 +34,8 @@ public class MISPChecklistActivity extends BaseActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mispchecklist);
 
-        googleMap = ((MapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
-
-        final LatLng TutorialsPoint = new LatLng(21, 57);
-        googleMap.addMarker(new MarkerOptions().position(TutorialsPoint).title("My Location"));
-        googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-        googleMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
-        googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
-        googleMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
-        googleMap.getUiSettings().setZoomGesturesEnabled(true);
-
+        mapFragment = ((MapFragment) getFragmentManager().findFragmentById(R.id.map));
+        mapFragment.getMapAsync(this);
 
         etStartDate = (EditText) findViewById(R.id.startdate);
         etStartDate.setOnClickListener(this);
@@ -136,5 +130,19 @@ public class MISPChecklistActivity extends BaseActivity implements View.OnClickL
                 startActivity(myIntent5);
                 break;
         }
+    }
+
+    @Override
+    public void onMapReady(GoogleMap map) {
+        LatLng sydney = new LatLng(3.139003, 101.686855);
+
+        map.setMyLocationEnabled(true);
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 13));
+
+        map.addMarker(new MarkerOptions()
+                .title("Kuala Lumpur")
+                .snippet("The most populous city in Malaysia.")
+                .position(sydney));
+
     }
 }

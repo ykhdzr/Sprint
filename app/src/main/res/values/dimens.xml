@@ -6,7 +6,10 @@
     <dimen name="activity_horizontal_more_margin">30dp</dimen>
     <dimen name="activity_vertical_less_margin">8dp</dimen>
 
+    <dimen name="activity_text_padding">3dp</dimen>
+
     <dimen name="medium_font_size">10pt</dimen>
     <dimen name="small_font_size">8pt</dimen>
     <dimen name="extra_small_font_size">6pt</dimen>
+
 </resources>
